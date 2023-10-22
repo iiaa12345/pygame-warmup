@@ -18,7 +18,9 @@ while running:
     # fill the background with color in RGB format
     screen.fill((40, 44, 52))
 
-    # TODO: draw simple home using drawing primitives like pygame.draw.line, pygame.draw.rect etc
+    pygame.draw.rect(screen, (255, 255, 255), [100, 250, 600, 300])
+
+    pygame.draw.polygon(screen, (255, 255, 255), [[100, 250], [400, 100], [700, 250]])
 
     # flip the display
     pygame.display.flip()

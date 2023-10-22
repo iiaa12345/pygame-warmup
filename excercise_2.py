@@ -10,9 +10,10 @@ screen = pygame.display.set_mode([800, 600])
 
 # load sprite image
 images_path = str(pathlib.Path().resolve()) + "/images/"
-img = pygame.image.load(images_path + "alien.png").convert_alpha()
+img = pygame.image.load(images_path + "sprite.png").convert_alpha()
 
-# TODO: load your own sprite image
+x = 400 - img.get_rect().width / 2
+y = 300 - img.get_rect().height / 2
 
 # run main game loop
 running = True

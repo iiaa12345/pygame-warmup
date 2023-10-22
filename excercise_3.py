@@ -26,6 +26,15 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                x -= 1
+            elif event.key == pygame.K_RIGHT:
+                x += 1
+            elif event.key == pygame.K_UP:
+                y -= 1
+            elif event.key == pygame.K_DOWN:
+                y += 1
 
     # fill the background with color in RGB format
     screen.fill((40, 44, 52))
