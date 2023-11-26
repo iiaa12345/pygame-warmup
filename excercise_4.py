@@ -25,7 +25,7 @@ while running:
     screen.blit(img, (x, y))
 
     if y < 550:
-        v += 10 / 75
+        v += 10 + 1 / 75
         y += v / 75
 
     pygame.display.flip()
